@@ -1,12 +1,15 @@
-const SubjectCard = ({props}) => {
+import Image from "next/image";
+
+const SubjectCard = ({props , index}) => {
    
     
   return (
-    <div>
+    <div key={index}>
       <div className="flex items-center  m-12 bg-[#FFFFFF] border-[0.25rem] border-solid border-[#E4E4E4] rounded-2xl  hover:shadow-2xl">
         <div className="h-[10rem] w-[3rem] bg-[#17A8FC] rounded-r-2xl"></div>
         <div className="p-2">
-          <img src={props.image} alt="My-Icon" />
+          <Image src={props.image} alt="My-Icon" width={279}
+              height={279} />
         </div>
         <div className="p-5">
           <div className="pt-2 pb-5">
@@ -14,7 +17,8 @@ const SubjectCard = ({props}) => {
               type="button"
               className="flex items-center w-[8rem] h-[1.75rem]  text-white text-[0.75rem] font-inter bg-[#17A8FC] hover:bg-[#49b6f6]  border-[#113448] rounded-3xl "
             >
-              <img src="/vector/v1.svg" alt="" className="p-2" />
+              <Image src="/vector/v1.svg" alt="" className="p-2" width={30}
+              height={30} />
               Handicapped
             </button>
             <div className="flex justify-between">
