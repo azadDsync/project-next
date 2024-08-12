@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const courses = [
   {
+    id:"1",
     title: "Mathematics",
     grade: "Grade 7",
     image: "/img/bp2.svg",
@@ -10,6 +11,7 @@ const courses = [
       "Get course completion certificate and prizes for 7 grade students participate now.",
   },
   {
+    id:"2",
     title: "Science",
     grade: "Grade 7",
     image: "/img/bp3.svg",
@@ -55,7 +57,7 @@ const FeaturedCourses = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 py-3  gap-5 ">
           {courses.map((course, index) => {
-            return <SubjectCard props={course} index={index}></SubjectCard>;
+            return <SubjectCard key={index} props={course} ></SubjectCard>;
           })}
         </div>
       </div>

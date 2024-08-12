@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const SubjectCard = ({props , index}) => {
+const SubjectCard = ({props }) => {
    
     
   return (
-    <div key={index}>
-      <div className="flex items-center  m-12 bg-[#FFFFFF] border-[0.25rem] border-solid border-[#E4E4E4] rounded-2xl  hover:shadow-2xl">
+    <div >
+      <div  className="flex items-center  m-12 bg-[#FFFFFF] border-[0.25rem] border-solid border-[#E4E4E4] rounded-2xl  hover:shadow-2xl">
         <div className="h-[10rem] w-[3rem] bg-[#17A8FC] rounded-r-2xl"></div>
         <div className="p-2">
           <Image src={props.image} alt="My-Icon" width={279}
