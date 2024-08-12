@@ -1,4 +1,5 @@
 // components/Footer.js
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
 
       
         <div className=" p-10">
-          <img src="./icons/footerLogo.svg" alt="" srcset="" />
+          <Image src="./icons/footerLogo.svg" alt="" width={200} height={120}/>
         </div>
       
 
@@ -53,20 +54,23 @@ const Footer = () => {
             <p className="text-[#6a6a6a]" >Phone: +443308220688</p>
             <div className="flex items-center justify-between  p-2">
           <a href="https://twitter.com">
-            <img src="/icons/twitter.png" alt="Twitter" className="h-6 w-6" />
+            <Image src="/icons/twitter.png" alt="Twitter" width={22} height={22} className="h-6 w-6" />
           </a>
           <a href="https://instagram.com">
-            <img
+            <Image
               src="/icons/instagram.png"
               alt="Instagram"
+              width={22} height={22}
               className="h-6 w-6"
             />
           </a>
           <a href="https://youtube.com">
-            <img src="/icons/youtube.png" alt="YouTube" className="h-6 w-6" />
+            <Image src="/icons/youtube.png" alt="YouTube" 
+            width={22} height={22}
+            className="h-6 w-6" />
           </a>
           <a href="https://whatsapp.com">
-            <img src="/icons/whatsapp.png" alt="whatsapp" className="h-6 w-6" />
+            <Image src="/icons/whatsapp.png" alt="whatsapp" width={22} height={22} className="h-6 w-6" />
           </a>
         </div>
           </div>

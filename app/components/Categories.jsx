@@ -1,3 +1,4 @@
+import Image from "next/image";
 const categories = [
   { name: "Education", image: "/img/p1.svg" },
   { name: "Sports", image: "/img/p2.svg" },
@@ -26,10 +27,13 @@ const Categories = () => {
             key={index}
             className="text-center p-4 border rounded-xl shadow-lg  hover:shadow-2xl"
           >
-            <img
+            <Image
               src={category.image}
               alt={category.name}
+              width={28}
+              height={36}
               className="w-28 h-36 mx-auto mb-4 "
+
             />
             <h3 className="font-medium">{category.name}</h3>
           </div>
