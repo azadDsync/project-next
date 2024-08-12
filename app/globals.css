@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 .custom-shadow {
-  text-shadow: 4px -4px 0 rgba(0, 0, 0, 0.5);
+  text-shadow: 4px -4px 0 rgb(0,65,103);
+}
+.custom-shadow2{
+  text-shadow: 1px 1px 0 rgb(0,65,103);
 }

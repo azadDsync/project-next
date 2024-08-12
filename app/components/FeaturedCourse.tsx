@@ -1,6 +1,8 @@
 import SubjectCard from "./SubjectCard";
 import Image from "next/image";
 
+
+
 const courses = [
   {
     id: "1",
@@ -20,6 +22,13 @@ const courses = [
   },
   // Add more courses here...
 ];
+interface courseSchema {
+  id?:string;
+  title?:string;
+  grade?:string;
+  image?:string;
+  description?:string;
+}
 
 const FeaturedCourses = () => {
   return (
@@ -33,7 +42,7 @@ const FeaturedCourses = () => {
           backgroundPosition: "right",
         }}
       >
-        <div className="flex p-12">
+        <div className="flex flex-col items-center sm:flex-row  p-12">
           <div className="w-56 ">
             <Image
               src="/img/bp1.svg"
@@ -49,15 +58,15 @@ const FeaturedCourses = () => {
             <p className="text-gray-600 mb-10">
               Some recent classes and webinars near your location.
             </p>
-            <button className="bg-[#17A8FC] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-blue-600 mb-10">
+            <button className="bg-[#17A8FC] text-white rounded-lg shadow-lg hover:bg-blue-600 sm:px-6 py-4  ">
               Learn Mathematics with best Teachers
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 py-3  gap-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           {courses.map((course, index) => {
-            return <SubjectCard key={index} props={course}></SubjectCard>;
+            return <SubjectCard key={index} title ={course.title} description={course.description} grade={course.grade} image={course.image }></SubjectCard>;
           })}
         </div>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Testimonial = () => {
   return (
     <div>
-      <div className="p-10 mx-56 font-bold">
+      <div className="mx-3 sm:mx-56 pb-8 font-bold">
       What our customers say?
       </div>
       <div
