@@ -36,7 +36,7 @@ const FeaturedCourses = () => {
         <div className="flex p-12">
           <div className="w-56 ">
             <Image
-              src="/images/trophy.png"
+              src="/img/bp1.svg"
               alt="image"
               width={279}
               height={279}

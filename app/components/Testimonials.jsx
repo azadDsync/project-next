@@ -21,11 +21,11 @@ const Testimonial = () => {
     >
       <div style={{ position: "absolute", top: "60px", left: "-60px" }}>
         <Image
-          src="/images/person.png"
+          src="/vector/Mask.svg"
           alt="Person Icon"
           width={120}
           height={60}
-          style={{ borderRadius: "50%" }}
+          style={{ borderRadius: "50%" ,backgroundColor:"#10294C"}}
         />
       </div>
       <div>
