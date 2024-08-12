@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const courses = [
   {
-    id:"1",
+    id: "1",
     title: "Mathematics",
     grade: "Grade 7",
     image: "/img/bp2.svg",
@@ -11,7 +11,7 @@ const courses = [
       "Get course completion certificate and prizes for 7 grade students participate now.",
   },
   {
-    id:"2",
+    id: "2",
     title: "Science",
     grade: "Grade 7",
     image: "/img/bp3.svg",
@@ -25,10 +25,10 @@ const FeaturedCourses = () => {
   return (
     <section className="bg-black m-8">
       <div
-      // bg-left-bottom bg-center 
+        // bg-left-bottom bg-center
         className=" mx-auto text-center  bg-white bg-no-repeat py-12 my-10 p-16 bg-custom-bg fit"
         style={{
-          backgroundImage: `url('/images/background.png')`,
+          backgroundImage: `url('/bg/b1.svg')`,
           backgroundSize: "contain",
           backgroundPosition: "right",
         }}
@@ -57,7 +57,7 @@ const FeaturedCourses = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 py-3  gap-5 ">
           {courses.map((course, index) => {
-            return <SubjectCard key={index} props={course} ></SubjectCard>;
+            return <SubjectCard key={index} props={course}></SubjectCard>;
           })}
         </div>
       </div>
