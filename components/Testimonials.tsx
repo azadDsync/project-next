@@ -19,7 +19,7 @@ const Testimonial = () => {
         position: "relative",
       }}
     >
-      <div style={{ position: "absolute", top: "60px", left: "-60px" }}>
+      <div className="w-[80px] sm:w-auto absolute top-[60px] left-1 sm:left-[-60px]" >
         <Image
           src="/vector/Mask.svg"
           alt="Person Icon"

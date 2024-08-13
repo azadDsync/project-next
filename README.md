@@ -1,3 +1,13 @@
+
+## Fully Responsive Next Js Project
+
+## Direct link to view project
+https://project-next-weld.vercel.app/
+
+By - Domendra Singh 
+
+## For local setup read the below doc
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

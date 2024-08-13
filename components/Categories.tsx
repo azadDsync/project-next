@@ -17,11 +17,11 @@ const categories = [
 const Categories = () => {
   return (
     <section className="py-2">
-      <div className="flex justify-between items-center px-20 pb-8">
+      <div className="flex justify-between items-center px-4 pb-8">
       <h2 className="  text-2xl font-bold ">Our Top Categories</h2>
         <button className="text-blue-400 text-xl hover:underline">View all</button>
       </div>
-      <div className="grid grid-cols-2 px-20 md:grid-cols-5 gap-4 0  ">
+      <div className="px-2 sm:px-20 grid grid-cols-2  md:grid-cols-5 gap-4 0  ">
         {categories.map((category, index) => (
           <div
             key={index}

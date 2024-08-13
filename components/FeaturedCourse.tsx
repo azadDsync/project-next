@@ -32,10 +32,10 @@ interface courseSchema {
 
 const FeaturedCourses = () => {
   return (
-    <section className="bg-black m-8">
+    <section className="bg-black ">
       <div
         // bg-left-bottom bg-center
-        className=" mx-auto text-center  bg-white bg-no-repeat py-12 my-10 p-16 bg-custom-bg fit"
+        className=" mx-auto text-center  bg-white bg-no-repeat  bg-custom-bg fit"
         style={{
           backgroundImage: `url('/bg/b1.svg')`,
           backgroundSize: "contain",
@@ -68,6 +68,7 @@ const FeaturedCourses = () => {
           {courses.map((course, index) => {
             return <SubjectCard key={index} title ={course.title} description={course.description} grade={course.grade} image={course.image }></SubjectCard>;
           })}
+     
         </div>
       </div>
     </section>
